@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Currency Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Simple Currency Converter</h1>
+    <section class="converter">
+      <div class="row">
+        <label for="from">From</label>
+        <select id="from"></select>
+      </div>
+      <div class="row">
+        <label for="to">To</label>
+        <select id="to"></select>
+      </div>
+      <div class="row">
+        <label for="amount">Amount</label>
+        <input id="amount" type="number" value="1" min="0" step="any" />
+      </div>
+      <div class="row">
+        <button id="convert">Convert</button>
+        <button id="swap">Swap</button>
+      </div>
+
+      <div class="result" id="result">—</div>
+
+      <div class="chart-wrap">
+        <canvas id="historyChart" width="600" height="200"></canvas>
+      </div>
+
+      <div class="notes">
+        <p>Rates provided by <a href="https://www.frankfurter.app/" target="_blank">Frankfurter API</a>. No API key required.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
