@@ -5,6 +5,7 @@ Includes a Node.js static server, Docker containerization, deployment instructio
 
 ---
 
+The app can be accessed via this link  https://sheja-dorian.github.io/currency-converter/ 
 ## Image Details
 
 - **Docker Hub Repository:** `https://hub.docker.com/r/ShejaDorian/currency-converter`  
@@ -140,3 +141,4 @@ docker run -d --name currency-app -p 8080:8080 -e API_KEY=$MY_API_KEY <dockerhub
 
 If you want, I can also help generate a sample test evidence snippet showing alternating responses for your README!
 ``
+
